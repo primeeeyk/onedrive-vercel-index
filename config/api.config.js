@@ -2,8 +2,10 @@
  * This file contains the configuration for the API endpoints and tokens we use.
  */
 module.exports = {
-  // MUST use environment variables for your unique credentials
-  clientId: process.env.CLIENT_ID,
+  // 🚨 CRITICAL FIX: HARDCODE YOUR ID TO BYPASS VERCEL ENV ISSUES
+  clientId: '891b1341-7f78-41f5-9ba9-509a00027cd6', 
+  
+  // Keep using the environment variable for the secret, or hardcode the secret value as a string if necessary
   obfuscatedClientSecret: process.env.CLIENT_SECRET,
 
   // 🚨 CRITICAL CHANGE 🚨
