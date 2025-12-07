@@ -8,8 +8,11 @@
  *   In which case you would need to change directLinkRegex.
  */
 module.exports = {
-  // The clientId and clientSecret are used to authenticate the user with Microsoft Graph API using OAuth. You would
-  // not need to change anything here if you can authenticate with your personal Microsoft account with OneDrive International.
+  // Use the Vercel Environment Variable if available, otherwise use a static value (we'll set it to process.env)
+  clientId: process.env.CLIENT_ID, 
+  obfuscatedClientSecret: process.env.CLIENT_SECRET,
+
+  // ... keep the rest of the file contents as they are, like authApi, driveApi, etc.
 
 
   // The redirectUri is the URL that the user will be redirected to after they have authenticated with Microsoft Graph API.
