@@ -3,17 +3,14 @@
  *
  * - If you are a OneDrive International user, you would not have to change anything here.
  * - If you are not the admin of your OneDrive for Business account, you may need to define your own clientId/clientSecret,
- *   check documentation for more details.
+ * check documentation for more details.
  * - If you are using a E5 Subscription OneDrive for Business account, the direct links of your files are not the same here.
- *   In which case you would need to change directLinkRegex.
+ * In which case you would need to change directLinkRegex.
  */
 module.exports = {
   // Use the Vercel Environment Variable if available, otherwise use a static value (we'll set it to process.env)
   clientId: process.env.CLIENT_ID, 
   obfuscatedClientSecret: process.env.CLIENT_SECRET,
-
-  // ... keep the rest of the file contents as they are, like authApi, driveApi, etc.
-
 
   // The redirectUri is the URL that the user will be redirected to after they have authenticated with Microsoft Graph API.
   // Likewise, you would not need to change redirectUri if you are using your personal Microsoft account with OneDrive International.
